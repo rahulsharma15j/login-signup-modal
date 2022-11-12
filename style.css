@@ -62,13 +62,35 @@ body {
   margin-left: 1rem;
 }
 
-.modal {
-  display: flex;
-  position: absolute;
+.open-modal-btn {
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
   background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: var(--medium);
+  font-weight: 500;
+  color: var(--dark-blue);
+  box-shadow: var(--shadow-2);
+  transition: all 0.2s ease-out;
+}
+
+.open-modal-btn:hover {
+  padding: 1.7rem 3.5rem;
+  letter-spacing: 1px;
+}
+
+.modal,
+.open-modal-btn {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal {
+  display: none;
+  background-color: var(--white);
   border-radius: var(--radius-15);
   box-shadow: var(--shadow);
   padding: 1rem;

@@ -12,8 +12,14 @@
     />
   </head>
   <body>
-    <div class="modal">
-      <i class="fa-regular fa-circle-xmark close-icon"></i>
+    <button onclick="toggleModal('open')" class="open-modal-btn">
+      View Modal Form
+    </button>
+    <div id="modal" class="modal">
+      <i
+        onclick="toggleModal('close')"
+        class="fa-regular fa-circle-xmark close-icon"
+      ></i>
       <div class="container mr-1">
         <h1 class="header">Hello Again!</h1>
         <h2 class="text">Enter your login credential to access your account</h2>
@@ -68,5 +74,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
