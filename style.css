@@ -72,7 +72,7 @@ body {
   font-weight: 500;
   color: var(--dark-blue);
   box-shadow: var(--shadow-2);
-  transition: all 0.2s ease-out;
+  transition: padding 0.2s ease-out, letter-spacing 0.3s ease-out;
 }
 
 .open-modal-btn:hover {
